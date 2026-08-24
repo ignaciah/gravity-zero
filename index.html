@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GravityZero - 3D Zero-G Space & Physics Simulator</title>
+  <meta name="description" content="Interactive 3D Zero-Gravity Space and Physics Simulator web app built with Three.js WebGL engine, custom rigid-body microgravity physics, grav-gun tractor beam, and sci-fi telemetry HUD.">
+  <link rel="stylesheet" href="/src/style.css">
+</head>
+<body>
+  <div id="app">
+    <!-- 3D Canvas -->
+    <div id="webgl-canvas"></div>
+
+    <!-- Header Navigation Bar -->
+    <header class="top-header">
+      <div class="brand-title">
+        <div class="brand-logo-icon"></div>
+        <div>
+          <h1 class="brand-name">GRAVITYZERO</h1>
+          <div class="brand-subtitle">3D ZERO-G PHYSICS SIMULATOR</div>
+        </div>
+      </div>
+
+      <div class="header-status">
+        <div class="status-badge">
+          <span class="indicator-dot active"></span>
+          <span>SIMULATION ONLINE</span>
+        </div>
+        <button id="audio-toggle-btn" class="audio-toggle-btn" title="Toggle Audio Sound Synth">
+          🔊
+        </button>
+      </div>
+    </header>
+
+    <!-- HUD Reticle & Telemetry Overlay -->
+    <div id="hud-overlay-container"></div>
+
+    <!-- Left Controls Sidebar -->
+    <div id="controls-sidebar-container"></div>
+
+    <!-- Right Missions Sidebar -->
+    <div id="missions-sidebar-container"></div>
+
+    <!-- Keyboard Legend Footer -->
+    <footer class="controls-legend glass-panel">
+      <div><span class="key-cap">L-CLICK</span> GRAB / TRACTOR</div>
+      <div><span class="key-cap">R-CLICK / F</span> FLING OBJECT</div>
+      <div><span class="key-cap">SCROLL</span> DISTANCE</div>
+      <div><span class="key-cap">W A S D</span> FLY MOVE</div>
+      <div><span class="key-cap">Q E</span> ELEVATION</div>
+    </footer>
+  </div>
+
+  <script type="module" src="/src/main.ts"></script>
+</body>
+</html>
